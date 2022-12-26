@@ -4,12 +4,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Verdana;
-    color: #333;
 }
 
 body {
-  /*background-image: url("../img/###.jpg");
-    background-position: center;
+  /*background-image: url("RickAndMorty.jpg"); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover; */
     background-color: aqua;
 }
@@ -53,9 +54,10 @@ select {
 
 /* Busca Header */
 .busca-container {
-    max-width: 450px;
-    margin: 3rem auto 0;
+    max-width: 30rem;
+    margin: 3rem auto;
     background-color: #fdfdfd;
+    color: #333;
     padding: 1.5rem;
     border-radius: 15px;
 }
@@ -93,12 +95,16 @@ select {
 
 /* busca List */
 .busca {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem 1rem;
     border-bottom: 1px solid #ddd;
     transition: 0.3s;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .busca h3 {

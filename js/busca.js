@@ -20,12 +20,12 @@ const savebusca = (text) => {
 
   const editBtn = document.createElement("button");
   editBtn.classList.add("edit-busca");
-  editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
+  editBtn.innerHTML = '<i class="fa-sharp fa-solid fa-pen-to-square">';
   busca.appendChild(editBtn);
 
   const deleteBtn = document.createElement("button");
   deleteBtn.classList.add("remove-busca");
-  deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+  deleteBtn.innerHTML = '<i class="fa-sharp fa-solid fa-trash-can"></i>';
   busca.appendChild(deleteBtn);
 
   buscaList.appendChild(busca);
