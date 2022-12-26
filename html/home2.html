@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra de busca</title>
+
+  <!-- fcss do Projeto -->
+  <link rel="stylesheet" href="../css/busca.css">
+  <link rel="stylesheet" href="home.css" <!-- Javascript do projeto -->
+  <script src="../js/busca.js" defer></script>
+
+  <!-- font-awesom -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="logo">
+    <h1>Quero Receitas</h1>
+  </div>
+  <div class="form">
+    <div class="busca-container">
+      <header>
+        <h2>Buscar Receitas</h2>
+      </header>
+      <form id="busca-form">
+        <p>Adicione seu ingrediente</p>
+        <div class="form-control">
+          <input type="text" id="busca-input" placeholder="O que você tem ai?" />
+          <button id="btn-adic" type="submit">
+            <i class="fa-thin fa-plus"></i>
+          </button>
+        </div>
+      </form>
+      <form id="edit-form" class="hide">
+        <p>Edite sua tarefa</p>
+        <div class="form-control">
+          <input type="text" id="edit-input" />
+          <button id="btn-edit" type="submit">
+            <i class="fa-solid fa-check-double"></i>
+          </button>
+        </div>
+        <div id="cancel-buscar">
+          <div id="cancel-edit-btn">
+            <button>Cancelar</button>
+          </div>
+      </form>
+
+      <div id="busca-list">
+        <!-- 
+            <div class="busca">
+            <h3>Estou fazendo algo aqui...</h3>
+            <button class="edit-busca">
+              <i class="fa-solid fa-pen"></i>
+            </button>
+            <button class="remove-busca">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div> 
+          -->
+      </div>
+
+      <div id="btn-buscar">
+        <button>Buscar</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</body>
+
+</html>
