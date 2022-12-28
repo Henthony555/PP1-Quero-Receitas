@@ -6,9 +6,9 @@
     --color-verde3: #035042;
     --color-black: #000117;
 }
-
+/*Imagen da logo*/
 .img_logo_header {
-    width: 45px;
+    height: 15vh;
 }
 
 .header,
@@ -22,12 +22,13 @@
     background-color: var(--color-verde1);
     justify-content: space-between;
     padding: 0 10%;
-    height: 3.5em;
-    box-shadow: 1px 1px 4px var(--color-verde3);
+    height: 8vh;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px var(--color-black);
 }
 
 .navigation_header {
-    gap: 3em;
+    gap: 3rem;
     z-index: 2;
 }
 

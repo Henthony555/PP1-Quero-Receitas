@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR | Cadastre-se </title>
+
+    <script src="../js/sidebar.js" defer></script>
+    <script src="../js/cadastro.js" defer></script>
+
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!-- font-awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- menu de navegação-->
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="logo_header">
+            <img src="../imgs/logoQR.png" alt="Logo" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <a href="#">Home</a>
+            <a href="#">Cadastre-se</a>
+            <a href="#">Login</a>
+            <a href="#">Enviar Receita</a>
+        </div>
+    </div>
+
+    <!-- Login Form && SlideShow -->
+    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+        <div class="form_div">
+            <h1> Bem-Vindo </h1>
+            <form id="form_cadastro"  action="">
+                <input type="text" name="nome" id="nome" placeholder="Nome" autocomplete="off" >
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" >
+                <input type="date" name="dataNaicimento" id="dataNaicimento" autocomplete="off" >
+                <input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="off" >
+                <input type="password" name="confirmarSenha" id="senha" placeholder="Confirmar senha" autocomplete="off" >
+                <button>Cadastro</button>
+            </form>
+        </div>
+
+        
+
+    </div>
+
+    <div class="footer" >
+        <p>Site feito com propositos academicos | ©Quero Receitas Team</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+:root {
+    --color-white: #f5f5f5;
+    --color-verde1: #10846F;
+    --color-verde2: #15ad91;
+    --color-verde3: #035042;
+    --color-black: #000117;
+}
+
+body {
+    background-image: url("../imgs/fundo-cadastro.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.content {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .form_div {
+    max-width: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid var(--color-white);
+    background-color: #10846fef;
+    box-shadow:
+        0px 0px 5px var(--color-verde3),
+        0px 0px  5px var(--color-verde3),
+        0px 0px  5px var(--color-verde3),
+        0px 0px  5px var(--color-verde3);
+    border-radius: 10px;
+}
+
+.content .form_div h1 {
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.content .form_div #form_cadastro {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form_cadastro input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+    font-size: 1rem;
+    color: var(--color-white);
+    outline: none !important
+}
+
+::-webkit-calendar-picker-indicator {
+    background-image: url(http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Calendar-icon.png);
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+#form_cadastro input::placeholder {
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+#form_cadastro input:hover {
+    box-shadow: 0px 10px 10px #ffffff33;
+    transform: translateY(-3px);
+    border-left: 1px solid var(--color-white);
+    border-right: 1px solid var(--color-white);
+    border-top: 1px solid var(--color-white);
+    transition: all 0.5s ease;
+}
+
+#form_cadastro button {
+    margin: 1rem 0;
+    padding: 0.7rem;
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form_cadastro button:hover {
+    color: var(--color-verde2);
+    background-color: var(--color-white);
+    border: none;
+    box-shadow: 0 0 15px var(--color-verde2);
+    transition: all 0.5s ease;
+    transition: background-color 0.5s ease-in-out;
+}
