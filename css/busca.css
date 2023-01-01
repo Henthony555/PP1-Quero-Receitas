@@ -1,25 +1,17 @@
-/* Geral */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Verdana;
-}
-
-body {
-  /*background-image: url("RickAndMorty.jpg"); 
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
-    background-color: aqua;
+:root {
+    --color-white: #f5f5f5;
+    --color-verde1: #10846F;
+    --color-verde2: #15ad91;
+    --color-verde3: #035042;
+    --color-black: #000117;
 }
 
 button {
-    background-color: #fdfdfd;
-    color: #102f5e;
-    border: 2px solid #102f5e;
-    padding: 0.3rem 0.6rem;
+    background-color: var(--color-verde1);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
     font-size: 1rem;
     cursor: pointer;
     display: flex;
@@ -29,23 +21,18 @@ button {
 }
 
 button:hover {
-    background-color: #102f5e;
-    color: #fff;
+    background-color: var(--color-white);
+    color: var(--color-verde1);
 }
 
 button:hover>i {
-    color: #fff;
+    color: var(--color-verde1);
 }
 
 button i {
     pointer-events: none;
-    color: #102f5e;
+    color: var(--color-white);
     font-weight: bold;
-}
-
-input,
-select {
-    padding: 0.25rem 0.5rem;
 }
 
 .hide {
@@ -54,53 +41,86 @@ select {
 
 /* Busca Header */
 .busca-container {
-    max-width: 30rem;
-    margin: 3rem auto;
-    background-color: #fdfdfd;
-    color: #333;
-    padding: 1.5rem;
-    border-radius: 15px;
+    max-width: 27rem;
+    width: 100%;
+    margin: 1rem;
+    background-color: var(--color-verde1);
+    color: var(--color-white);
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .busca-container header {
     text-align: center;
+    color:  var(--color-white);
     padding: 0 1rem 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--color-verde2);
+}
+
+.busca-container header h1 {
+    color: var(--color-white);
+    font-size: 2rem;
 }
 
 /* busca Form */
+
 #busca-form,
 #edit-form {
     padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--color-verde2);
 }
 
 #busca-form p,
 #edit-form p {
+    font-size: 1rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
 .form-control {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .form-control input {
-    margin-right: 0.3rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+    font-size: 1rem;
+    color: var(--color-white);
+    outline: none !important
+}
+
+.form-control input:hover {
+    box-shadow: 0px 10px 10px #ffffff33;
+    transform: translateY(-3px);
+    border-left: 1px solid var(--color-white);
+    border-right: 1px solid var(--color-white);
+    border-top: 1px solid var(--color-white);
+    transition: all 0.5s ease;
+}
+
+.form-control input::placeholder {
+    color: var(--color-white);
+    font-size: 1rem;
 }
 
 #cancel-edit-btn {
     margin-top: 1rem;
 }
 
-/* busca List */
+/* ingredientes div */
 .busca {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem 1rem;
-    border-bottom: 1px solid #ddd;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--color-verde2);
     transition: 0.3s;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -109,14 +129,15 @@ select {
 
 .busca h3 {
     flex: 1;
-    font-size: 0.9rem;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
 .busca button {
     margin-left: 0.4rem;
 }
 
-/* Buscar */
+/* Buscar botao */
 
 #btn-buscar{
     display: flex;
