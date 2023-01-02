@@ -46,14 +46,37 @@
     <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
         <div class="div-form">
             <h1>Enviar sua Receita</h1>
-            <form action="" id="form-receita" >
-                <input type="text" name="nome" id="nome" placeholder="Nome" autocomplete="off" >
+            <form action="" id="form-receita">
+                <input type="text" name="nomeReceita" id="nomeReceita" placeholder="Nome da receita" autocomplete="off">
+                <div class="timeImg">
+                    <div class="img-env">
+                        <p>Enviar a foto da receita:</p>
+                        <input type="file" name="fotoReceita" id="fotoReceita" accept="image/*">
+                    </div>
+                    <div class="time-env">
+                        <div class="tempo-div">
+                            <p>Tempo de Preparo:</p>
+                            <input type="time" name="tempo" id="tempo">
+                        </div>
+                        <input type="number" name="porcoes" id="porcoes" placeholder="Porções">
+
+
+                    </div>
+                </div>
+                <div class="enviar_ingredientes">
+                    <p>enviar_ingredientes</p>
+                </div>
+                <textarea name="modoPreparo" id="modoPreparo" cols="30" rows="10"
+                    placeholder="Modo de Preparo"></textarea>
+                <div class="env-bnt">
+                    <button type="submit">Enviar</button>
+                </div>
             </form>
         </div>
     </div>
-    
+
     <!-- Footer -->
-    <div class="footer" >
+    <div class="footer" id="footer" onfocus="closeSidebar()">
         <p>Site feito com propositos academicos | ©Quero Receitas Team</p>
     </div>
 
