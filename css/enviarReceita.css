@@ -24,7 +24,7 @@ body {
 
 .content {
     width: 100%;
-    height: 92vh;
+    height: 102vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,13 +101,6 @@ textarea::placeholder {
     font-size: 1rem;
 }
 
-#form-receita input[type="time"]::-webkit-calendar-picker-indicator {
-    background-image: url("https://icons.iconarchive.com/icons/kyo-tux/soft/128/Clock-icon.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    color: transparent;
-}
-
 #form-receita input:hover {
     box-shadow: 0px 10px 10px #ffffff33;
     transform: translateY(-3px);
@@ -142,7 +135,6 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     margin: 0.5rem 0;
-    padding: 0.5rem;
     justify-content: space-around;
 }
 
@@ -152,7 +144,7 @@ textarea::placeholder {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     border-right: 1px solid var(--color-white);
 }
 
@@ -160,8 +152,7 @@ textarea::placeholder {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 1rem;
+    padding: 0.5rem;
 
 }
 
@@ -171,8 +162,17 @@ textarea::placeholder {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0rem 1rem;
+    padding: 0rem 0.5rem;
     border-right: 1px solid var(--color-white);
+}
+
+.timeImg .time-env .porcoes-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0.5rem;
 }
 
 #form-receita .env-bnt {
@@ -182,4 +182,34 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+/*TODOLIST --------------------------*/
+
+.enviar_ingredientes{
+    width: 100%;
+}
+
+.addIng-control{
+    display: flex;
+    align-items: center;
+}
+
+.addIng-control #addIng-input{
+    width: 60%;
+}
+
+.addIng{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 0rem;
+    border-bottom: 1px solid var(--color-white);
+}
+
+.addIng h3{
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 300;
 }

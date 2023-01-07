@@ -54,18 +54,40 @@
                         <input type="file" name="fotoReceita" id="fotoReceita" accept="image/*">
                     </div>
                     <div class="time-env">
+
                         <div class="tempo-div">
                             <p>Tempo de Preparo:</p>
                             <input type="time" name="tempo" id="tempo">
                         </div>
-                        <input type="number" name="porcoes" id="porcoes" placeholder="Porções">
-
+                        <div class="porcoes-div">
+                            <p>Porções:</p>
+                            <input type="number" name="porcoes" id="porcoes" placeholder="Nº de Porções">
+                        </div>
 
                     </div>
                 </div>
+
+                <!-- lista de ingredientes / com TodoList -->
                 <div class="enviar_ingredientes">
-                    <p>enviar_ingredientes</p>
+                    <div class="addIng-control">
+                        <input type="text" id="addIng-input" placeholder="Adicione os ingredientes" />
+                        <button type="submit">
+                            <i class="fa-sharp fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div id="addIng-list">
+                        <!-- -->
+                        <div class="addIng">
+                            <h3>Estou fazendo algo aqui...</h3>
+                            <button class="remove-addIng">
+                                <i class="fa-sharp fa-solid fa-trash-can"></i></i>
+                            </button>
+                        </div>
+
+                    </div>
                 </div>
+
                 <textarea name="modoPreparo" id="modoPreparo" cols="30" rows="10"
                     placeholder="Modo de Preparo"></textarea>
                 <div class="env-bnt">
