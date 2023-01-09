@@ -9,16 +9,12 @@
 
     <script src="../js/sidebar.js" defer></script>
     <script src="../js/enviarReceita.js" defer></script>
-    <script src="../js/slideImagen.js" defer></script>
+
 
     <link rel="stylesheet" href="../css/enviarReceita.css">
     <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/footer.css">
-
-    <!-- font-awesom -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/multi-select-tag.css">
 </head>
 
 <body>
@@ -67,31 +63,30 @@
                     </div>
                 </div>
 
-                <!-- lista de ingredientes / com TodoList -->
+                <!-- lista de ingredientes  -->
                 <div class="enviar_ingredientes">
-                    <div class="addIng-control">
-                        <input type="text" id="addIng-input" placeholder="Adicione os ingredientes" />
-                        <button type="submit">
-                            <i class="fa-sharp fa-solid fa-plus"></i>
-                        </button>
-                    </div>
+                    <p>Selecione os ingredientes corretamente clicando no botão a direita( v ):</p>
+                    <select name="countries" id="countries" multiple>
 
-                    <div id="addIng-list">
-                        <!-- -->
-                        <div class="addIng">
-                            <h3>Estou fazendo algo aqui...</h3>
-                            <button class="remove-addIng">
-                                <i class="fa-sharp fa-solid fa-trash-can"></i></i>
-                            </button>
-                        </div>
+                        <option value="1">Afghanistan</option>
+                        <option value="2">Australia</option>
+                        <option value="3">Germany</option>
+                        <option value="4">Canada</option>
+                        <option value="5">Russia</option>
+                        <option value="6">Brasil</option>
+                        <option value="7">Reino unido</option>
+                        <option value="8">Ucrania</option>
+                        <option value="9">Tokio</option>
+                        <option value="10">Franca</option>
 
-                    </div>
+                    </select>
+
                 </div>
 
                 <textarea name="modoPreparo" id="modoPreparo" cols="30" rows="10"
                     placeholder="Modo de Preparo"></textarea>
                 <div class="env-bnt">
-                    <button type="submit">Enviar</button>
+                    <button type="submit" >Enviar</button>
                 </div>
             </form>
         </div>
@@ -101,6 +96,11 @@
     <div class="footer" id="footer" onfocus="closeSidebar()">
         <p>Site feito com propositos academicos | ©Quero Receitas Team</p>
     </div>
+
+    <script src="../js/multi-select-tag.js"></script>
+    <script>
+        new MultiSelectTag('countries')  // id
+    </script>
 
 </body>
 

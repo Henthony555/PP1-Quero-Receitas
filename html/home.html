@@ -7,19 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QR| Home</title>
 
-  <link rel="stylesheet" href="../css/busca.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/sidebar.css">
   <link rel="stylesheet" href="../css/home.css">
 
-  <script src="../js/busca.js" defer></script>
   <script src="../js/sidebar.js" defer></script>
   <script src="../js/home.js" defer></script>
+  <link rel="stylesheet" href="../css/multi-select-tag.css">
 
-  <!-- font-awesom -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -44,59 +39,42 @@
 
   <!-- Busca Form && Home -->
   <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
-    <div class="busca-container">
-      <header>
-        <h1>Buscar Receitas</h1>
-      </header>
 
-      <form id="busca-form">
-        <p>Adicione seu ingrediente:</p>
-        <div class="form-control">
-          <input type="text" id="busca-input" placeholder="O que você tem ai?" />
-          <button type="submit">
-            <i class="fa-sharp fa-solid fa-plus"></i>
-          </button>
-        </div>
+    <div class="divFrom-home">
+      <h1>Buscar Receitas</h1>
+      <p>Para Buscar uma receita, primeiro adicione os ingredientes
+        desejados clicando no botão à direita no campo a baixo( v ),
+        em seguida clique no botão "Buscar".</p>
+      <form action="" id="formHome">
+        <select name="countries" id="countries" multiple>
+
+          <option value="1">Afghanistan</option>
+          <option value="2">Australia</option>
+          <option value="3">Germany</option>
+          <option value="4">Canada</option>
+          <option value="5">Russia</option>
+          <option value="6">Russia</option>
+          <option value="7">Russia</option>
+          <option value="8">Russia</option>
+          <option value="9">Russia</option>
+          <option value="10">Russia</option>
+
+        </select>
+
+        <button id="btn-buscar" type="submit">Buscar</button>
       </form>
-
-      <form id="edit-form" class="hide">
-        <p>Mude seu ingrediente:</p>
-        <div class="form-control">
-          <input type="text" id="edit-input" />
-          <button type="submit">
-            <i class="fa-solid fa-check-double"></i>
-          </button>
-        </div>
-        <button id="cancel-edit-btn">Cancelar</button>
-      </form>
-
-      <div id="busca-list">
-        <!-- 
-            <div class="busca">
-            <h3>Estou fazendo algo aqui...</h3>
-            <button class="edit-busca">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-            <button class="remove-busca">
-              <i class="fa-sharp fa-solid fa-trash-can"></i></i>
-            </button>
-          </div> 
-          -->
-      </div>
-
-      <div id="btn-buscar">
-        <button>Buscar</button>
-      </div>
-
     </div>
   </div>
 
   <!-- Footer -->
-  <div class="footer" onfocus="closeSidebar()" >
+  <div class="footer" onfocus="closeSidebar()">
     <p>Site feito com propositos academicos | ©Quero Receitas Team</p>
   </div>
 
-
+  <script src="../js/multi-select-tag.js"></script>
+  <script>
+    new MultiSelectTag('countries')  // id
+  </script>
 </body>
 
 </html>
