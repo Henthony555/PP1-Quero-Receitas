@@ -1,0 +1,25 @@
+{
+  "name": "pp1-quero-receitas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henthony555/PP1-Quero-Receitas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henthony555/PP1-Quero-Receitas/issues"
+  },
+  "homepage": "https://github.com/Henthony555/PP1-Quero-Receitas#readme",
+  "dependencies": {
+    "express": "~4.18.2",
+    "express-handlebars": "~6.0.6",
+    "mysql2": "~3.0.1",
+    "sequelize": "~6.28.0"
+  }
+}

@@ -1,0 +1,49 @@
+<div class="div-form">
+    <h1>Enviar sua Receita</h1>
+    <form action="" id="form-receita">
+        <input type="text" name="nomeReceita" id="nomeReceita" placeholder="Nome da receita" autocomplete="off">
+        <div class="timeImg">
+            <div class="img-env">
+                <p>Enviar a foto da receita:</p>
+                <input type="file" name="fotoReceita" id="fotoReceita" accept="image/*">
+            </div>
+            <div class="time-env">
+
+                <div class="tempo-div">
+                    <p>Tempo de Preparo:</p>
+                    <input type="time" name="tempo" id="tempo">
+                </div>
+                <div class="porcoes-div">
+                    <p>Porções:</p>
+                    <input type="number" name="porcoes" id="porcoes" placeholder="Nº de Porções">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- lista de ingredientes  -->
+        <div class="enviar_ingredientes">
+            <p>Selecione os ingredientes corretamente clicando no botão a direita( v ):</p>
+            <select name="countries" id="countries" multiple>
+
+                <option value="1">Afghanistan</option>
+                <option value="2">Australia</option>
+                <option value="3">Germany</option>
+                <option value="4">Canada</option>
+                <option value="5">Russia</option>
+                <option value="6">Brasil</option>
+                <option value="7">Reino unido</option>
+                <option value="8">Ucrania</option>
+                <option value="9">Tokio</option>
+                <option value="10">Franca</option>
+
+            </select>
+
+        </div>
+
+        <textarea name="modoPreparo" id="modoPreparo" cols="30" rows="10" placeholder="Modo de Preparo"></textarea>
+        <div class="env-bnt">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</div>
