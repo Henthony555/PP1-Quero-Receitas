@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR| Receitas </title>
+
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/receitaCompleta.css">
+
+  <script src="../js/sidebar.js" defer></script>
+  <script src="../js/receitaCompleta.js" defer></script>
+
+</head>
+
+<body>
+  <!-- menu de navegação-->
+  <div class="header" id="header">
+    <button onclick="toggleSidebar()" class="btn_icon_header">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="logo_header">
+      <img src="../imgs/logoQR.png" alt="Logo" class="img_logo_header">
+    </div>
+    <div class="navigation_header" id="navigation_header">
+      <button onclick="toggleSidebar()" class="btn_icon_header">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a href="../html/home.html">Home</a>
+      <a href="../html/cadastro.html">Cadastre-se</a>
+      <a href="../html/login.html">Login</a>
+      <a href="../html/enviarReceita.html">Enviar Receita</a>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+
+    <div class="div-receitaCompleta">
+      <h1>Bolo de cenoura</h1>
+      <div class="img-receita-cp">
+        <img src="../imgs/slide2.jpg" alt="">
+      </div>
+      <div class="dados-receita-cp">
+        <div class="info-receitas">
+          <h4>Autor da Receita:</h4>
+          <p>Avatar Teste</p>
+        </div>
+        <div class="info-receitas">
+          <h4>Tempo de Preparo:</h4>
+          <p>01:25</p>
+        </div>
+        <div class="info-receitas">
+          <h4>Porções:</h4>
+          <p>01</p>
+        </div>
+      </div>
+      <div class="ing-receita-cp">
+        <h4>Ingredientes:</h4>
+        <div class="ing-list-cp">
+          <p>Cenoura</p>
+          <p>Trigo</p>
+          <p>Ovos</p>
+          <p>Fermento</p>
+        </div>
+      </div>
+      <div class="preparo-receita-cp">
+        <h4>Modo de Preparo:</h4>
+        <p>
+          Pré-aqueça o forno a 180 graus Celsius. Em uma tigela grande, misture o açúcar e o óleo 
+          vegetal até ficar homogêneo. Adicione os ovos, um de cada vez, e misture bem.
+
+          Adicione a cenoura ralada e misture novamente. Em outra tigela, misture a farinha de trigo, o fermento 
+          em pó e a canela em pó (se desejar). Adicione essa mistura à tigela com os ingredientes líquidos e misture 
+          até ficar homogêneo.
+
+          Despeje a massa em uma forma untada e enfarinhada e leve ao forno por cerca de 40 minutos, ou até que 
+          um palito inserido no centro do bolo saia limpo.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer" onfocus="closeSidebar()">
+    <p>Site feito com propositos academicos | ©Quero Receitas Team</p>
+  </div>
+
+</body>
+
+</html>

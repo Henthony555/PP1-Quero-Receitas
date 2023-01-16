@@ -11,10 +11,11 @@
     --color-verde2: #15ad91;
     --color-verde3: #035042;
     --color-black: #000117;
+    --color-fundo: #10846fef;
 }
 
 body {
-    background-image: url("../imgs/fundo-cadastro.jpg");
+    background-image: url("../imgs/fundo01.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,7 +25,7 @@ body {
 
 .content {
     width: 100%;
-    height: 92vh;
+    min-height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +41,7 @@ body {
     justify-content: center;
     padding: 1rem;
     border: 1px solid var(--color-white);
-    background-color: #10846fef;
+    background-color: var(--color-fundo);
     box-shadow:
         0px 0px 5px var(--color-verde3),
         0px 0px  5px var(--color-verde3),
