@@ -8,8 +8,15 @@
     <title>Quero Receitas</title>
 
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    <link rel="stylesheet" type="text/css" type="text/css" href="/css/sidebar.css">
     <link rel="stylesheet" type="text/css" href="/css/multi-select-tag.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/css/cadastro.css">
+    <link rel="stylesheet" type="text/css" href="/css/enviarReceita.css">
+    <link rel="stylesheet" type="text/css" href="/css/perfio.css">
+    <link rel="stylesheet" type="text/css" href="/css/listarReceita.css">
+    <link rel="stylesheet" type="text/css" href="/css/receitaCompleta.css">
     {{{styles}}}
 
 </head>
@@ -18,7 +25,7 @@
     <!-- menu de navegação-->
     <div class="header" id="header">
         <button onclick="toggleSidebar()" class="btn_icon_header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
@@ -29,7 +36,7 @@
         </div>
         <div class="navigation_header" id="navigation_header">
             <button onclick="toggleSidebar()" class="btn_icon_header">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x"
                     viewBox="0 0 16 16">
                     <path
                         d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
@@ -53,8 +60,19 @@
     </div>
 
     {{{scripts}}}
+    <script src="/js/receitaCompleta.js"></script>
+    <script src="/js/listarReceita.js"></script>
     <script src="/js/sidebar.js"></script>
     <script src="/js/multi-select-tag.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/perfio.js"></script>
+    <script src="/js/enviarReceita.js"></script>
+    <script src="/js/cadastro.js"></script>
+    <script src="/js/slideImagen.js"></script>
+    <script src="/js/login.js"></script>
+    <script>
+    new MultiSelectTag('countries')  // id
+  </script>
 </body>
 
 </html>
